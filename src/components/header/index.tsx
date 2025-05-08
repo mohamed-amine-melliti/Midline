@@ -73,10 +73,10 @@ export const Header: React.FC = () => {
     label: (
       <Link to={link} style={{ display: "flex", alignItems: "center" }}>
         {imageUrl && (
-          <Avatar
-            size={32}
-            src={imageUrl}
-            style={{ minWidth: "32px", marginRight: "16px" }}
+          <img
+            src="/images/midlinelogo.png"
+            alt="Midline Logo"
+            style={{ width: "32px", height: "32px", marginRight: "16px" }}
           />
         )}
         <Text>{title}</Text>

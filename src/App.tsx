@@ -51,8 +51,10 @@ const App: React.FC = () => {
   // This hook is used to automatically login the user.
   // We use this hook to skip the login page and demonstrate the application more quickly.
   const { loading } = useAutoLoginForDemo();
+  const API_URL = "https://api.finefoods.refine.dev";
 
-  const API_URL = "https://www.pizza-demo-v3.fr/APITICKET";
+  const API_URLv2 = "https://www.pizza-demo-v3.fr/APITICKET/";
+  const API_URL_V1 = "https://srv2.bidata.fr/GetListeCommandeWebService/";
 
   const dataProvider = jsonServerDataProvider(API_URL);
 
